@@ -31,7 +31,7 @@
           </svg>
         </template>
         <template #image>
-          <img :src="`/img/pizza/${pizza.name}.png`" />
+          <img :src="assetUrl(`img/pizza/${pizza.name}.png`)" />
         </template>
         <template #title>{{ pizza.name }}</template>
         <template #price>
@@ -50,6 +50,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import PizzaCard from '@/components/ui/PizzaCard.vue'
+
+import { assetUrl } from '@/utils/assetUrl'
 
 import type { Pizza } from '@/types'
 

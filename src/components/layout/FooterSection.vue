@@ -68,7 +68,7 @@
         <span>Location</span>
         <ul>
           <li>
-            <img src="/img/icons/mail.svg" alt="Email" />
+            <img src="/img/icons/location.svg" alt="Email" />
             <p>
               <strong>Kerobokan</strong>
               Jl. Raya Keroboan Br Taman, Kuta No.98, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten
@@ -195,6 +195,10 @@ import BaseButton from '@/components/ui/BaseButton.vue'
 
         column-gap: 1rem;
         margin-bottom: 1.5rem;
+
+        img {
+          height: 1lh;
+        }
       }
     }
   }
