@@ -16,7 +16,7 @@
 defineProps<{
   name: string
   value: string | number
-  modelValue: string | number
+  modelValue: string | number | null
 }>()
 </script>
 

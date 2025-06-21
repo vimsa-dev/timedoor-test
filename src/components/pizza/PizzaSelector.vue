@@ -51,6 +51,8 @@
 import { computed } from 'vue'
 import PizzaCard from '@/components/ui/PizzaCard.vue'
 
+import type { Pizza } from '@/types'
+
 const props = defineProps<{
   pizzas: Pizza[]
   selectedPizzaId: number | null

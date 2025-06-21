@@ -43,6 +43,8 @@ import { computed } from 'vue'
 import RadioButton from '@/components/ui/RadioButton.vue'
 import CheckPill from '@/components/ui/CheckPill.vue'
 
+import type { Pizza, Size, Topping } from '@/types'
+
 const props = defineProps<{
   sizes: Size[]
   toppings: Topping[]

@@ -32,6 +32,8 @@
 import { computed } from 'vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 
+import type { Pizza, Size, Topping } from '@/types'
+
 const props = defineProps<{
   selectedPizza: Pizza | undefined
   selectedSize: Size | undefined

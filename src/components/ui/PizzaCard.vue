@@ -1,4 +1,3 @@
-<!-- PizzaCard.vue -->
 <template>
   <label class="pizza-card" :class="{ 'pizza-card--checked': modelValue === value }">
     <input
@@ -32,7 +31,7 @@
 defineProps<{
   name: string
   value: string | number
-  modelValue: string | number
+  modelValue: string | number | null
 }>()
 
 defineEmits<{
