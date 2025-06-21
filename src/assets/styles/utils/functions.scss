@@ -1,0 +1,11 @@
+@use 'sass:list';
+@use 'vars' as v;
+
+@function z($layer) {
+  $index: list.index(v.$z-indexes, $layer);
+  @if $index {
+    @return (list.length(v.$z-indexes) - $index + 1);
+  } @else {
+    @return 0;
+  }
+}

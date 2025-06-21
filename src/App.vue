@@ -1,47 +1,27 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  <HeaderSection />
   <main>
-    <TheWelcome />
+    <HeroBanner />
+    <PizzaBuilder />
   </main>
+  <FooterSection />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup lang="ts">
+// Layout
+import HeaderSection from '@/components/layout/HeaderSection.vue'
+import FooterSection from '@/components/layout/FooterSection.vue'
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+// Templates
+import HeroBanner from '@/components/templates/HeroBanner.vue'
+import PizzaBuilder from '@/components/templates/PizzaBuilder.vue'
+</script>
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+<style scoped lang="scss">
+@use '@/assets/styles/utils/vars' as v;
+@use '@/assets/styles/utils/functions' as f;
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+main {
+  z-index: f.z('content');
 }
 </style>
