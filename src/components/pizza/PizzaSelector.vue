@@ -78,9 +78,16 @@ const selectedId = computed({
   margin-bottom: 8.4rem;
 }
 
-:deep(.pizza-card img) {
-  width: 100%;
-  height: auto;
+:deep(.pizza-card) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  svg {
+    width: 14.1rem;
+    height: 12.5rem;
+  }
 }
 
 :deep(.radio-btn) {
