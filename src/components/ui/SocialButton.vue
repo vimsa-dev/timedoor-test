@@ -1,10 +1,12 @@
 <template>
   <a href="#" class="btn-social">
-    <img :src="`/img/icons/${props.id.toLowerCase()}.svg`" />
+    <img :src="assetUrl(`/img/icons/${props.id.toLowerCase()}.svg`)" />
   </a>
 </template>
 
 <script setup lang="ts">
+import { assetUrl } from '@/utils/assetUrl'
+
 const props = defineProps<{
   id: string
 }>()
